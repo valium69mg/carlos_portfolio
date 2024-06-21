@@ -131,7 +131,7 @@ function App() {
           <a className="descargarBtn" href="/"> Descargar CV  {downloadLogo} </a>
       </div>
       <div className="skillsSection">
-      <h1> Technologies {terminalLogo} </h1>
+      <h1> Technologias {terminalLogo} </h1>
       <div className="skillsCardContainer">
         {skills.map((skill) => {
           return <SkillCard 

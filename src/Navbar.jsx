@@ -20,24 +20,26 @@ function Navbar() {
         return <div className="navbar">
         <Svg/>
         <Link className="link highlight" to="/"> Acerca de Mi </Link>
-        <Link className="link" to="/contact"> Contactame </Link>
         <Link className="link" to="/work"> Proyectos </Link>
+        <Link className="link" to="/contact"> Contactame </Link>
+
 
     </div>
     } else if (path === '/contact') {
         return <div className="navbar">
         <Svg/>
         <Link className="link" to="/"> Acerca de Mi </Link>
-        <Link className="link highlight" to="/contact"> Contactame </Link>
         <Link className="link" to="/work"> Proyectos </Link>
+        <Link className="link highlight" to="/contact"> Contactame </Link>
+
 
     </div>
     }  else if (path === '/work') {
         return <div className="navbar">
         <Svg/>
         <Link className="link" to="/"> Acerca de Mi </Link>
-        <Link className="link" to="/contact"> Contactame </Link>
         <Link className="link highlight" to="/work"> Proyectos </Link>
+        <Link className="link" to="/contact"> Contactame </Link>
 
     </div>
     } 
