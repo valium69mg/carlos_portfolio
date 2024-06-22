@@ -1,9 +1,9 @@
 import Navbar from "./Navbar"
 import "./styles/contact.css";
-import phonelogo from "./phone.png"
-import gmaillogo from "./gmail.png";
-import githublogo from "./github.png";
-import linkedinlogo from "./linkedinlogo.jpg";
+import phonelogo from "./images/phone.png"
+import gmaillogo from "./images/gmail.png";
+import githublogo from "./images/github.png";
+import linkedinlogo from "./images/linkedinlogo.jpg";
 import Footer from "./Footer";
 
 let contactLogo = <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" className="bi bi-person-lines-fill" viewBox="0 0 16 16">
