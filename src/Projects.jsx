@@ -12,7 +12,12 @@ import blogImg from "./images/projects/blog.png";
 import studentsImg from "./images/projects/students.png";
 import financeImg from "./images/projects/finance.png";
 import webstoreImg from "./images/projects/webstore.png";
-
+import sqlCourseImg from "./images/courses/sql-course.png";
+import webdevCourseImg from "./images/courses/webdev-course.png";
+import pythonCourseImg from "./images/courses/python-course.png";
+import phpCourseImg from "./images/courses/php-course.png";
+import javaCourseImg from "./images/courses/java-course.png";
+import dataCourseImg from "./images/courses/data-course.png";
 // USE STATE
 import Loader from "./Loader";
 import { useState,useEffect } from "react";
@@ -37,6 +42,11 @@ let exitLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fi
 
 let infoLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="blue" className="bi bi-info-circle-fill" viewBox="0 0 16 16">
 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg>
+
+let certificateLogo = <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="blue" className="bi bi-card-text" viewBox="0 0 16 16">
+<path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+<path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
 </svg>
 
 let projects = [
@@ -108,6 +118,33 @@ let projectsBack = [
     },
 ]
 
+let certifications = [
+    {
+        "Title": "The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert",
+        "Img": sqlCourseImg,
+    },
+    {
+        "Title":"The Complete 2024 Web Development Bootcamp",
+        "Img": webdevCourseImg,
+    },
+    {
+        "Title":"100 Days of Code: The Complete Python Pro Bootcamp",
+        "Img": pythonCourseImg,
+    },
+    {
+        "Title":"Complete Modern PHP Developer Course",
+        "Img": phpCourseImg,
+    },
+    {
+        "Title":"Java Programming for Complete Beginners",
+        "Img": javaCourseImg,
+    },
+    {
+        "Title":"Machine Learning y Data Science con Python",
+        "Img": dataCourseImg,
+    }
+]
+
 function ProjectCard(props) {  
     
     const [showDescription,setShowDescription] = useState(false);
@@ -143,6 +180,14 @@ function ProjectCard(props) {
 }
 
 
+function CertificateCard(props) {  
+    return <div className="singleProject">
+        <h1> {props.title} </h1>
+        <img src={props.src} alt={props.title}></img>
+    </div>
+}
+
+
 function ProjectCategory(props) {    
     return <div className="singleProjectContainer">
         <h1 id="categoryTitle"> {props.category} {props.logo} </h1>
@@ -156,7 +201,21 @@ function ProjectCategory(props) {
                 tags={project["Tags"]}
                 link={project["Link"]}
             />
-    
+        })}      
+        </div>
+    </div>
+}
+
+function CertificateCategory(props) {    
+    return <div className="singleProjectContainer">
+        <h1 id="categoryTitle"> {props.category} {props.logo} </h1>
+        <div className="singleProjectsCards">
+        {props.projects.map((project) => {
+        return <CertificateCard
+                key={project["Title"]}
+                title={project["Title"]}
+                src={project["Img"]}
+            />
         })}      
         </div>
     </div>
@@ -176,21 +235,29 @@ function Projects() {
     return <div className="App">
         <Navbar/>
         {loading !== true ? 
-        <>
+        <>  
+            <div className="projectsContainer">
+                <ProjectCategory 
+                    key="Fullstack"
+                    category="Fullstack Projects" 
+                    projects={projectsBack}
+                    logo={backLogo}
+                    />
+            </div>
             <div className="projectsContainer">
                 <ProjectCategory 
                     key="Front End"
-                    category="Front End" 
+                    category="Front End Projects" 
                     projects={projects}
                     logo={frontLogo}
                     />
             </div>
             <div className="projectsContainer">
-                <ProjectCategory 
-                    key="Fullstack"
-                    category="Fullstack" 
-                    projects={projectsBack}
-                    logo={backLogo}
+                <CertificateCategory
+                    key="Udemy"
+                    category="Certifications (Udemy)" 
+                    projects={certifications}
+                    logo={certificateLogo}
                     />
             </div>
             <Footer/>
