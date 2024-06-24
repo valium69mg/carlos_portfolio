@@ -152,3 +152,70 @@
     width: 260px;
     height: 260px;
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1279px) and (max-width: 1792px) {
+    .presentationCard {
+        width: 90%;
+    }
+}
+
+@media (min-width: 824px) and (max-width: 1292px) {
+    .presentationCard {
+        width: 80%;
+    }
+
+    .presentationCard h1 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 596px) and (max-width: 823px) {
+    .presentationCard {
+        width: 80%;
+    }
+
+    .presentationCard h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1292px) {
+    .frameCard img {
+        width: 144px;
+        height: 144px;
+    }
+
+    .frameCard h1 {
+        font-size: 2rem;
+    }
+} 
+
+@media (max-width: 595px) {
+    .presentationCard {
+        width: 80%;
+    }
+
+    .presentationCard h1 {
+        font-size: 24px;
+    }
+
+    .presentationCard p {
+        font-size: 12px;
+    }
+
+    .imgWrapper {
+        border-radius: 50%;
+        border: 3px solid blue;
+        overflow: hidden;
+    }
+    
+    .presentationCard img {
+        width: 144px;
+        height: 144px;
+    }
+    
+    
+}
+

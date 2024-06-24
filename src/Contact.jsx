@@ -25,7 +25,7 @@ let contacts = [
     {
         "Img": githublogo,
         "Mail": "valium69mg",
-        "Site": "Github"
+        "Site": "https://github.com/valium69mg"
     },
     {
         "Img": linkedinlogo,

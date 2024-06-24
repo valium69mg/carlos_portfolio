@@ -32,3 +32,56 @@
     justify-self: start;
     margin-right: 70%;
 }
+
+.title {
+    color:blue;
+}
+
+@media (min-width: 1279px) and (max-width: 1792px) {
+    .logoNavbar {
+        justify-self: start;
+        margin-right: 50%;
+    }
+}
+
+@media (min-width: 824px) and (max-width: 1292px) {
+    .logoNavbar {
+        justify-self: start;
+        margin-right: 30%;
+    }
+}
+
+@media (min-width: 596px) and (max-width: 823px) {
+    .logoNavbar {
+        justify-self: start;
+        margin-right: 0%;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 595px) {
+    .logoNavbar {
+        justify-self: start;
+        margin-right: 0%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 6px;
+        padding: 12px 24px;
+        margin-top: 12px;
+        width: 95%;
+        border-radius: 12px;
+        box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.75);
+        border-radius: 12px;
+        background-color: white;
+    }
+
+    
+}
+
+
