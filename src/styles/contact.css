@@ -90,6 +90,11 @@
         width: 44px;
         height: 44px;
     }
+
+    .contactCard {
+        padding:0px;
+    }
+    
 }
 
 @media (max-width: 596px) {
@@ -100,19 +105,19 @@
 }
 @media (min-width: 596px) and (max-width: 823px) {
     .contactContainer {
-        width: 100%;
+        width: 95%;
     }
 }
 
 @media (max-width: 1292px) {
     .contactContainer {
-        width: 100%;
+        width: 95%;
     }
 } 
 
 @media (max-width: 595px) {
     .contactContainer {
-        width: 100%;
+        width: 95%;
     }
    
 }
