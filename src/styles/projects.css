@@ -33,7 +33,7 @@
     align-items: center;
     padding: 12px 24px;
     border-radius: 12px;
-    box-shadow: 0px 0px 0px 1px rgba(0,0,255,0.73);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.74);
     background-color: white;
 }
 
@@ -56,3 +56,37 @@
 #categoryTitle {
     font-size: 48px;
 }
+
+/* DESCRIPTION POP UP */
+
+.btn {
+    border: none;
+    background-color: none;
+
+}
+
+.description {
+    position: absolute;
+    visibility: visible;
+    border-radius: 12px;
+    background-color: blue;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    width:30%;
+}
+
+.hidden {
+    position: absolute;
+    color: gray;
+    box-shadow: none;
+    visibility: hidden;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
+  }
