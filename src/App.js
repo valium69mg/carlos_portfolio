@@ -16,6 +16,8 @@ import linuxlogo from "./images/linuxlogo.png";
 import djangologo from "./images/django-icon.png";
 import cv from "./blank.pdf";
 import "./styles/home.css";
+import Loader from "./Loader";
+import { useState,useEffect } from "react";
 
 let skills = [
   {
@@ -119,43 +121,60 @@ function FrameCard(props) {
 }
 
 function App() {
+  
+  const [loading,setLoading] = useState(true);
+   
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    },1500)
+  })
+  
+
   return (
     <div className="App">
       <Navbar/>
-      <div className="presentationCard">    
-        <h1> Acerca de Mi {gearLogo}</h1> 
-          <div className="imgWrapper">
-          <img src={CarlosPic} alt="avatar"></img>
-          </div>
-          <h1> Ingeniero en Mecatronica, Desarrollador Web Fullstack y Programador. </h1>
-          <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, me dedico al diseño de aplicaciones y paginas web usando frameworks y tecnologias modernas. </h3>
-          <a className="descargarBtn" href={cv}  target="_blank" rel="noopener noreferrer"> Descargar CV  {downloadLogo} </a>
-      </div>
-      <div className="skillsSection">
-      <h1> Technologias {terminalLogo} </h1>
-      <div className="skillsCardContainer">
-        {skills.map((skill) => {
-          return <SkillCard 
-            title={skill["Title"]} 
-            description={skill["Description"]}
-            img={skill["Img"]}
-          />
-        })}
-      </div>
-      </div>
-      <div className="skillsSection">
-      <h1> Frameworks {windowLogo} </h1>
-      <div className="skillsCardContainer">
-        {skillsFramework.map((skill) => {
-          return <FrameCard 
-            title={skill["Title"]} 
-            description={skill["Description"]}
-            img={skill["Img"]}
-          />
-        })}
-      </div>
-      </div>
-      <Footer/>
+      {loading !== true ? 
+      <>
+        <div className="presentationCard">    
+          <h1> Acerca de Mi {gearLogo}</h1> 
+            <div className="imgWrapper">
+            <img src={CarlosPic} alt="avatar"></img>
+            </div>
+            <h1> Ingeniero en Mecatronica, Desarrollador Web Fullstack y Programador. </h1>
+            <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, me dedico al diseño de aplicaciones y paginas web usando frameworks y tecnologias modernas. </h3>
+            <a className="descargarBtn" href={cv}  target="_blank" rel="noopener noreferrer"> Descargar CV  {downloadLogo} </a>
+        </div>
+        <div className="skillsSection">
+        <h1> Technologias {terminalLogo} </h1>
+        <div className="skillsCardContainer">
+          {skills.map((skill) => {
+            return <SkillCard 
+              title={skill["Title"]} 
+              description={skill["Description"]}
+              img={skill["Img"]}
+            />
+          })}
+        </div>
+        </div>
+        <div className="skillsSection">
+        <h1> Frameworks {windowLogo} </h1>
+        <div className="skillsCardContainer">
+          {skillsFramework.map((skill) => {
+            return <FrameCard 
+              title={skill["Title"]} 
+              description={skill["Description"]}
+              img={skill["Img"]}
+            />
+          })}
+        </div>
+        </div>
+        <Footer/>
+      </>
+      :
+      <Loader/>
+      }
+      
     </div>
   );
 }
