@@ -69,52 +69,59 @@ let projects = [
         "Description": "Proyecto de Front End que usa tecnologia React,para hacer una pagina profesional, contiene informacion acerca de las acreditaciones, proyectos y medios de contacto del programador. ",
         "Tags": "#Javascript #React",
         "Img": portfolioImg,
-        "Link":"https://www.youtube.com/404",
+        "Link":"https://www.youtube.com/watch?v=ufeC2vtdsiM",
     }
 ]
 
 let projectsBack = [
     {
-        "Title": "JWT Authentication System",
+        "Title": "JWT Authentication System en NodeJS",
         "Description": "Proyecto de autenticacion (login,register,etc) usando NodeJS como backend, utilizando el modelo Model View Controller para la solucion, usando encriptacion de password y otras medidas de seguridad",
         "Tags": "#Javascript #NodeJS #PostgreSQL",
         "Img": jwtImg,
-        "Link":"https://www.youtube.com/404",
+        "Link":"https://www.youtube.com/watch?v=CZJt4mJEUc8",
     },
     {
-        "Title": "Contact Book",
+        "Title": "Contact Book en Flask",
         "Description": "Usando React como Front End y Flask como Backend, la aplicacion web consiste de un libro personal de contactos, el usuario puede registrarse, iniciar sesion y agregar/borrar contactos a su preferencia. ",
         "Tags": "#Flask #Python #React #Javascript #MongoDB",
         "Img": contactImg,
         "Link":"https://www.youtube.com/watch?v=_Puangse1Vo&t=12s",
     },
     {
-        "Title": "Blog Web App",
+        "Title": "Blog Web App en NodeJS",
         "Description": "Usando React como Front End y NodeJS como Backend, la aplicacion web permite al usuario subir publicaciones de blog con una imagen adherida, la autenticacion del usuario esta hecha por cookies. ",
         "Tags": "#Javascript #React #NodeJS #PostgreSQL",
         "Img": blogImg,
         "Link":"https://www.youtube.com/watch?v=wJyW7PtdhuI&t=2s",
     },
     {
-        "Title": "Student Management System",
+        "Title": "Student Management System en PHP",
         "Description": "Usando PHP sin frameworks, se construyo una aplicacion que usa una base de datos MySQL para gestionar las calificaciones de alumnos en un salon de clases, el maestro puede agregar/borrar alumnos y cambiar su calificacion.",
         "Tags": "#PHP #MySQL",
         "Img": studentsImg,
-        "Link":"https://www.youtube.com/404",
+        "Link":"https://www.youtube.com/watch?v=pOjp9iJUKDE",
     },
     {
-        "Title": "Finance Tracker",
+        "Title": "Finance Tracker en Laravel",
         "Description": "Usando PHP con el framwork Laravel, se implemento una solucion que permite al usuario controlar sus gastos mensualmente, agregar/eliminar cuentas,gastos e ingresos y desplegarlos en un dashboard para analisis. ",
         "Tags": "#PHP #Laravel #MySQL",
         "Img": financeImg,
-        "Link":"https://www.youtube.com/404",
+        "Link":"https://www.youtube.com/watch?v=X28UbNHOBbA",
     },
     {
-        "Title": "Ecommerce Web Store",
+        "Title": "Ecommerce Web Store en Laravel",
         "Description": "Usando PHP con el framwork Laravel, se ejecuto la solucion para hacer una aplicacion web de ecommerce, cuenta con seccion de productos, carrito y demas. El administrador cuenta con un dashboard donde puede agregar/modificar/eliminar productos ",
         "Tags": "#PHP #Laravel #MySQL",
         "Img": webstoreImg,
-        "Link":"https://www.youtube.com/404",
+        "Link":"https://www.youtube.com/watch?v=kJQp_rHdbmo",
+    },
+    {
+        "Title": "2FA Auth simulation en NodeJS",
+        "Description": "Proyecto de autenticacion (login,register,etc) 2FA usando nodeJS, consiste en un contador con un numero de 6 digitos que cambia cada cierto tiempo, y a su vez cuenta con una API para validat el token actual.",
+        "Tags": "#Javascript #NodeJS #PostgreSQL",
+        "Img": jwtImg,
+        "Link":"https://www.youtube.com/watch?v=wtxNj1DeGOE",
     },
 ]
 
@@ -255,7 +262,7 @@ function Projects() {
             <div className="projectsContainer">
                 <CertificateCategory
                     key="Udemy"
-                    category="Certifications (Udemy)" 
+                    category="Certificados (Udemy)" 
                     projects={certifications}
                     logo={certificateLogo}
                     />

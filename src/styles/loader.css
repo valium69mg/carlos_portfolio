@@ -4,7 +4,7 @@
     justify-content: center;
     width: 150px;
     height: 150px;
-    top: 15vh;
+    top: 35vh;
     position: relative;
 }
 
@@ -38,4 +38,16 @@
     75% {top: 50%;left: 0;}
     87.5% {top: 0; left: 0;}
     100% {top: 0; left: 0;}
+}
+
+@media (max-width: 900px) {
+    .loader {
+        top: 20vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .loader {
+        top: 10vh;
+    }
 }

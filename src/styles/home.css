@@ -183,8 +183,8 @@
 
 @media (max-width: 1292px) {
     .frameCard img {
-        width: 144px;
-        height: 144px;
+        width: 180px;
+        height: 180px;
     }
 
     .frameCard h1 {
@@ -212,8 +212,8 @@
     }
     
     .presentationCard img {
-        width: 144px;
-        height: 144px;
+        width: 160px;
+        height: 160px;
     }
     
     
