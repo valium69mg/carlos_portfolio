@@ -128,7 +128,7 @@ function App() {
     setTimeout(() => {
       setLoading(false);
     },1500)
-  })
+  });
   
 
   return (
@@ -146,7 +146,7 @@ function App() {
             <a className="descargarBtn" href={cv}  target="_blank" rel="noopener noreferrer"> Descargar CV  {downloadLogo} </a>
         </div>
         <div className="skillsSection">
-        <h1> Technologias {terminalLogo} </h1>
+        <h1> Tecnologias {terminalLogo} </h1>
         <div className="skillsCardContainer">
           {skills.map((skill) => {
             return <SkillCard 
