@@ -15,12 +15,12 @@ let contacts = [
     {
         "Img": phonelogo,
         "Mail": "+52 4422737383",
-        "Site": "Telefono"
+        "Site": "https://web.whatsapp.com/"
     },
     {
         "Img": gmaillogo,
         "Mail": "carlostranquilino.cr@gmail.com",
-        "Site": "Gmail"
+        "Site": "https://www.google.com/intl/en-US/gmail/about/"
     },
     {
         "Img": githublogo,
@@ -30,7 +30,7 @@ let contacts = [
     {
         "Img": linkedinlogo,
         "Mail": "Carlos Tranquilino Carlos Roman",
-        "Site": "LinkedIn"
+        "Site": "https://www.linkedin.com/"
     }
 ]
 
@@ -41,7 +41,7 @@ function ContactCard(props) {
         </div>
         <div className="infoCard">
             <h2> {props.mail}</h2>
-            <h4> {props.site} </h4>
+            <a target="_blank" rel="noopener noreferrer" href={props.site}> <h4> {props.site} </h4> </a>
         </div>
     </div>
 }

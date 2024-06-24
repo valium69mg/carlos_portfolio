@@ -14,7 +14,7 @@ import wordpresslogo from "./images/wordpresslogo.png";
 import nodejslogo from "./images/nodejs-logo.png";
 import linuxlogo from "./images/linuxlogo.png";
 import djangologo from "./images/django-icon.png";
-import cv from "./blank.pdf";
+import cv from "./cv.pdf";
 import "./styles/home.css";
 import Loader from "./Loader";
 import { useState,useEffect } from "react";
