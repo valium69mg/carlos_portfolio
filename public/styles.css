@@ -21,3 +21,13 @@ body {
     margin: 24px;
     color: blue;
 }
+
+
+.center-screen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
+  }

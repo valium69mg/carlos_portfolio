@@ -30,13 +30,12 @@ let youtubeLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
 </svg>
 
 
-let exitLogo = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-x-lg" viewBox="0 0 16 16">
+let exitLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" className="bi bi-x-lg" viewBox="0 0 16 16">
 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
 </svg>
 
-let commentLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="blue" className="bi bi-chat-left-dots" viewBox="0 0 16 16">
-<path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-<path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+let infoLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="blue" className="bi bi-info-circle-fill" viewBox="0 0 16 16">
+<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
 </svg>
 
 let projects = [
@@ -45,18 +44,21 @@ let projects = [
         "Description": "Proyecto con tecnologia React, que usa una API de noticias para extraer las 5 noticias mas relevantes del dia, despues desglosar la informacion en tarjetas con animaciones limpias hechas en CSS",
         "Tags": "#Javascript #React",
         "Img": newsImg,
+        "Link":"https://www.youtube.com/watch?v=chDm4el41FU",
     },
     {
         "Title": "Bible Verses",
         "Description": "Proyecto de Front End que usa tecnologia React (Javascript) CSS y HTML para hacer un carrusel infinito en el que cada vez que el usuario toca el fondo de la pagina carga mas contenido. ",
         "Tags": "#Javascript #React",
         "Img": versesImg,
+        "Link":"https://www.youtube.com/watch?v=9pxqkgLyRoE",
     },
     {
         "Title": "Portfolio Web Page",
         "Description": "Proyecto de Front End que usa tecnologia React,para hacer una pagina profesional, contiene informacion acerca de las acreditaciones, proyectos y medios de contacto del programador. ",
         "Tags": "#Javascript #React",
         "Img": portfolioImg,
+        "Link":"https://www.youtube.com/404",
     }
 ]
 
@@ -66,36 +68,42 @@ let projectsBack = [
         "Description": "Proyecto de autenticacion (login,register,etc) usando NodeJS como backend, utilizando el modelo Model View Controller para la solucion, usando encriptacion de password y otras medidas de seguridad",
         "Tags": "#Javascript #NodeJS #PostgreSQL",
         "Img": jwtImg,
+        "Link":"https://www.youtube.com/404",
     },
     {
         "Title": "Contact Book",
         "Description": "Usando React como Front End y Flask como Backend, la aplicacion web consiste de un libro personal de contactos, el usuario puede registrarse, iniciar sesion y agregar/borrar contactos a su preferencia. ",
         "Tags": "#Flask #Python #React #Javascript #MongoDB",
         "Img": contactImg,
+        "Link":"https://www.youtube.com/watch?v=_Puangse1Vo&t=12s",
     },
     {
         "Title": "Blog Web App",
         "Description": "Usando React como Front End y NodeJS como Backend, la aplicacion web permite al usuario subir publicaciones de blog con una imagen adherida, la autenticacion del usuario esta hecha por cookies. ",
         "Tags": "#Javascript #React #NodeJS #PostgreSQL",
         "Img": blogImg,
+        "Link":"https://www.youtube.com/watch?v=wJyW7PtdhuI&t=2s",
     },
     {
         "Title": "Student Management System",
         "Description": "Usando PHP sin frameworks, se construyo una aplicacion que usa una base de datos MySQL para gestionar las calificaciones de alumnos en un salon de clases, el maestro puede agregar/borrar alumnos y cambiar su calificacion.",
         "Tags": "#PHP #MySQL",
         "Img": studentsImg,
+        "Link":"https://www.youtube.com/404",
     },
     {
         "Title": "Finance Tracker",
         "Description": "Usando PHP con el framwork Laravel, se implemento una solucion que permite al usuario controlar sus gastos mensualmente, agregar/eliminar cuentas,gastos e ingresos y desplegarlos en un dashboard para analisis. ",
         "Tags": "#PHP #Laravel #MySQL",
         "Img": financeImg,
+        "Link":"https://www.youtube.com/404",
     },
     {
         "Title": "Ecommerce Web Store",
         "Description": "Usando PHP con el framwork Laravel, se ejecuto la solucion para hacer una aplicacion web de ecommerce, cuenta con seccion de productos, carrito y demas. El administrador cuenta con un dashboard donde puede agregar/modificar/eliminar productos ",
         "Tags": "#PHP #Laravel #MySQL",
         "Img": webstoreImg,
+        "Link":"https://www.youtube.com/404",
     },
 ]
 
@@ -114,20 +122,21 @@ function ProjectCard(props) {
     return <div className="singleProject">
         <h1> {props.title} </h1>
         <img src={props.src} alt={props.title}></img>
-        <button onClick={displayInfo} className="btn"> {commentLogo}</button>
+        <div className="projectLogos">
+        <button onClick={displayInfo} className="btn"> {infoLogo}</button>
         {showDescription !== true ? 
-            <h5 className="description hidden"> {props.description}</h5>
+            <h5 className="description center-screen hidden"> {props.description}</h5>
             : 
-            
             <h5 className="description center-screen"> 
-                {props.description} 
+                <p> <span className="bold">Info: </span>{props.description} </p>
                 <button className="btn" onClick={displayInfo}> {exitLogo} </button> 
             </h5> 
                 
             
             
         }
-        <a href="#"> {youtubeLogo}</a>
+        <a href={props.link} target="_blank" rel="noopener noreferrer"> {youtubeLogo}</a>
+        </div>
         <p className="tag"> {props.tags}</p>
     </div>
 }
@@ -144,6 +153,7 @@ function ProjectCategory(props) {
                 description={project["Description"]}
                 src={project["Img"]}
                 tags={project["Tags"]}
+                link={project["Link"]}
             />
     
         })}      
