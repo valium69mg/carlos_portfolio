@@ -14,6 +14,7 @@ import wordpresslogo from "./images/wordpresslogo.png";
 import nodejslogo from "./images/nodejs-logo.png";
 import linuxlogo from "./images/linuxlogo.png";
 import djangologo from "./images/django-icon.png";
+import cv from "./blank.pdf";
 import "./styles/home.css";
 
 let skills = [
@@ -128,7 +129,7 @@ function App() {
           </div>
           <h1> Ingeniero en Mecatronica, Desarrollador Web Fullstack y Programador. </h1>
           <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, me dedico al diseño de aplicaciones y paginas web usando frameworks y tecnologias modernas. </h3>
-          <a className="descargarBtn" href="/"> Descargar CV  {downloadLogo} </a>
+          <a className="descargarBtn" href={cv}  target="_blank" rel="noopener noreferrer"> Descargar CV  {downloadLogo} </a>
       </div>
       <div className="skillsSection">
       <h1> Technologias {terminalLogo} </h1>
