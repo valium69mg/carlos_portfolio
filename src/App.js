@@ -62,12 +62,12 @@ let skillsFramework = [
     "Img":laravellogo,
   },
   {
-    "Title":"Wordpress.org",
+    "Title":"Wordpress",
     "Description": "",
     "Img":wordpresslogo,
   },
   {
-    "Title":"Node JS",
+    "Title":"NodeJS",
     "Description": "",
     "Img":nodejslogo,
   },

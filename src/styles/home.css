@@ -164,52 +164,78 @@
     }
 }
 
-@media (min-width: 824px) and (max-width: 1292px) {
+@media (min-width: 1024px) and (max-width: 1278px) {
     .presentationCard {
         width: 80%;
     }
 
 }
 
-@media (min-width: 596px) and (max-width: 823px) {
+@media (min-width: 824px) and (max-width: 1023px) {
     .presentationCard {
         width: 80%;
     }
 
-   
 }
 
-@media (max-width: 1292px) {
-    .frameCard img {
-        width: 180px;
-        height: 180px;
+@media (min-width: 640px) and (max-width: 823px) {
+    .presentationCard h3  {
+        font-size: 16px;
     }
 
-    .frameCard h1 {
-        font-size: 2rem;
-    }
-} 
-
-@media (max-width: 595px) {
-    .presentationCard {
-        width: 80%;
-    }
-
-   
-    .presentationCard p {
-        font-size: 12px;
-    }
-
-    .imgWrapper {
-        border-radius: 50%;
-        border: 3px solid blue;
-        overflow: hidden;
+    .presentationCard h1  {
+        font-size: 18px;
     }
     
     .presentationCard img {
-        width: 160px;
-        height: 160px;
+        width: 200px;
+        height: 200px;
     }
+
+    .descargarBtn {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 596px) and (max-width: 639px) {
+    .presentationCard h3  {
+        font-size: 16px;
+    }
+
+    .presentationCard h1  {
+        font-size: 18px;
+    }
+    
+    .presentationCard img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .descargarBtn {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 595px) {
+    .presentationCard h3  {
+        font-size: 12px;
+    }
+
+    .presentationCard h1  {
+        font-size: 16px;
+    }
+    
+    .presentationCard img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .descargarBtn {
+        font-size: 16px;
+    }
+    
+   
     
     
 }
