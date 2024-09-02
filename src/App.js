@@ -167,7 +167,7 @@ function App() {
   return (
     <div className="App">
       <>
-      <button className="dropbtn" onClick={toggleMenu}> Menu {window.innerWidth < 596 ? downwardsArrowLogo : upwardsArrowLogo} </button>
+      <button className="dropbtn" onClick={toggleMenu}> Menu {menuVisibility === false ? downwardsArrowLogo : upwardsArrowLogo} </button>
       <Navbar visibility={menuVisibility}/>
       </>    
       {loading !== true ? 
