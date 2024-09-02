@@ -24,13 +24,13 @@ let contacts = [
         "Img": phonelogo,
         "Mail": "+52 4422737383",
         "Site": "https://wa.me/524422737383",
-        "Message":"Mandame un Whatsapp"
+        "Message":"Mandame un Whatsapp."
     },
     {
         "Img": gmaillogo,
         "Mail": "carlostranquilino.cr@gmail.com",
         "Site": "https://mail.google.com/mail/?view=cm&fs=1&to=carlostranquilino.cr@gmail.com&su=SUBJECT&body=BODY",
-        "Message":"Enviame un mail a gmail"
+        "Message":"Enviame un mail a gmail."
     },
     {
         "Img": githublogo,
