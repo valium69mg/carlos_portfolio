@@ -22,29 +22,29 @@ import { useState,useEffect } from "react";
 let skills = [
   {
     "Title":"Javascript",
-    "Description": "Javascript para Web Development con HTML y CSS, con jQuery, React, NodeJS, etc.",
+    "Description": "Javascript con HTML y CSS, con jQuery, React, NodeJS.",
     "Img":jslogo,
   },
   {
     "Title":"PHP",
-    "Description": "PHP junto con frameworks como Laravel y Symphony y herramientas como Wordpress.",
+    "Description": "PHP junto con frameworks como Laravel y Wordpress.",
     "Img":phplogo,
   }
   ,
   {
     "Title":"Python",
-    "Description": "Python, junto con frameworks como Flask y Django y herramientas de Analisis de Datos y Machine Learning.",
+    "Description": "Python, junto con frameworks como Flask y analisis de datos.",
     "Img":pythonlogo,
   }
   ,
   {
     "Title":"Bases de Datos",
-    "Description": "bases de datos SQL y no SQL con distintos lenguajes de programacion, ya sea mongoDB, postgreSQL, MySQL, SQLite, etc",
+    "Description": "bases de datos SQL y no SQL con: mongoDB, postgreSQL, MySQL, SQLite.",
     "Img":databaselogo,
   },
   {
     "Title":"Java",
-    "Description": "Experiencia programando en java spring framework, enfocado en spring boot para tecnologias backend.",
+    "Description": "Experiencia usando java con spring y spring boot para tecnologias backend.",
     "Img":javaLogo,
   }
   
