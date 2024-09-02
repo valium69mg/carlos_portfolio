@@ -143,7 +143,7 @@ function App() {
             <div className="imgWrapper">
             <img src={CarlosPic} alt="avatar"></img>
             </div>
-            <h1> Ingeniero en Mecatronica, Desarrollador Web Fullstack y Programador. </h1>
+            <h1> Desarrollador Web Fullstack y Programador. </h1>
             <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, me dedico al diseño de aplicaciones y paginas web usando frameworks y tecnologias modernas. </h3>
             <a className="descargarBtn" href={cv}  target="_blank" rel="noopener noreferrer"> Descargar CV  {downloadLogo} </a>
         </div>
