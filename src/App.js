@@ -6,7 +6,7 @@ import jslogo from "./images/js-logo.png";
 import phplogo from "./images/php-logo.png";
 import pythonlogo from './images/python-logo.png';
 import databaselogo from "./images/database.png";
-import cpp from "./images/cpp.png";
+import javaLogo from "./images/java-logo.png";
 import laravellogo from "./images/laravel-logo.png";
 import reactlogo from "./images/react-logo.png";
 import Footer from "./Footer";
@@ -43,9 +43,9 @@ let skills = [
     "Img":databaselogo,
   },
   {
-    "Title":"C/C++",
-    "Description": "Experiencia programando microcontroladores con el uso de C y C++, incluyendo proyectos de sistemas embebidos y de control de variables.",
-    "Img":cpp,
+    "Title":"Java",
+    "Description": "Experiencia programando en java spring framework, enfocado en spring boot para tecnologias backend.",
+    "Img":javaLogo,
   }
   
 ]
