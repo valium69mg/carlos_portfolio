@@ -50,9 +50,7 @@ let contacts = [
 
 function ContactCard(props) {
     return <div className="contactCard">
-        <div className="imgWrapper">                
-            <img src={props.img} alt="contactCardImage"></img>
-        </div>
+        <img src={props.img} alt="contactCardImage"></img>
         <div className="infoCard">
             <h2> {props.mail}</h2>
             <a target="_blank" rel="noopener noreferrer" href={props.site}> <h4> {props.message} </h4> </a>
