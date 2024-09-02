@@ -8,15 +8,16 @@ function Svg() {
   </svg>
 }
 
-function Navbar() {
-    
+
+function Navbar(props) {
+
     const [path,setPath] = useState('');
 
     useEffect(() => {
         setPath(window.location.pathname);
     },[]);
 
-    if (path === '/') {
+    if (path === '/' && props.visibility === true) {
         return <div className="navbar">
         <Svg/>    
         <Link className="link highlight" to="/"> Acerca de Mi </Link>
@@ -25,7 +26,7 @@ function Navbar() {
 
 
     </div>
-    } else if (path === '/contact') {
+    } else if (path === '/contact' && props.visibility === true) {
         return <div className="navbar">
         <Svg/>
         <Link className="link" to="/"> Acerca de Mi </Link>
@@ -34,7 +35,7 @@ function Navbar() {
 
 
     </div>
-    }  else if (path === '/work') {
+    }  else if (path === '/work'  && props.visibility === true) {
         return <div className="navbar">
         <Svg/>
         <Link className="link" to="/"> Acerca de Mi </Link>
@@ -43,10 +44,11 @@ function Navbar() {
 
     </div>
     } 
-    else {
-        return <h1> 404!</h1>
-    }
+    else if (props.visibility === false) {
+        return <>
 
+        </>
+    } 
      
 }
 
