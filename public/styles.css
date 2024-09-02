@@ -3,6 +3,7 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    min-height: 100vh;
     font-variation-settings:
         "wdth" 100,
         "YTLC" 500;
