@@ -9,7 +9,7 @@
     border-radius: 12px;
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.74);
     border-radius: 12px;
-    background-color: white;
+    background-color: #E2DAD6;
 }
 
 .link {
@@ -25,8 +25,8 @@
 }
 
 .highlight {
-    border: 1px solid blue;
-    color: blue;
+    border: 1px solid #6482AD;
+    color: #6482AD;
 }
 
 .logoNavbar {
@@ -35,7 +35,7 @@
 }
 
 .title {
-    color:blue;
+    color:#6482AD;
 }
 
 @media (min-width: 1279px) and (max-width: 1792px) {

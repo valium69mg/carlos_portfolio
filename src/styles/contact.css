@@ -10,7 +10,7 @@
     width: fit-content;
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.74);
     border-radius: 12px;
-    background-color: white;
+    background-color: #E2DAD6;
 }
 
 .contactContainer h1 {
@@ -28,7 +28,7 @@
 
 .contactCard h2 {
     font-size: 1rem;
-    color: blue;
+    color: #6482AD;
 }
 
 .contactCard h4 {
