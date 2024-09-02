@@ -66,8 +66,7 @@
 
 @media (max-width: 595px) {
     .logoNavbar {
-        justify-self: start;
-        margin-right: 0%;
+        display: none;
     }
 
     .navbar {
