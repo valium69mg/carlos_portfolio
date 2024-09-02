@@ -23,22 +23,28 @@ let contacts = [
     {
         "Img": phonelogo,
         "Mail": "+52 4422737383",
-        "Site": "https://web.whatsapp.com/"
+        "Site": "https://wa.me/524422737383",
+        "Message":"Mandame un Whatsapp"
     },
     {
         "Img": gmaillogo,
         "Mail": "carlostranquilino.cr@gmail.com",
-        "Site": "https://www.google.com/intl/en-US/gmail/about/"
+        "Site": "https://mail.google.com/mail/?view=cm&fs=1&to=carlostranquilino.cr@gmail.com&su=SUBJECT&body=BODY",
+        "Message":"Enviame un mail a gmail"
     },
     {
         "Img": githublogo,
         "Mail": "valium69mg",
-        "Site": "https://github.com/valium69mg"
+        "Site": "https://github.com/valium69mg",
+        "Message":"Visita mi github."
+
     },
     {
         "Img": linkedinlogo,
         "Mail": "Carlos Tranquilino Carlos Roman",
-        "Site": "https://www.linkedin.com/"
+        "Site": "https://www.linkedin.com/in/carlos-tranquilino-carlos-rom%C3%A1n-678a50302/",
+        "Message":"Checa mi Linkedin."
+
     }
 ]
 
@@ -49,7 +55,7 @@ function ContactCard(props) {
         </div>
         <div className="infoCard">
             <h2> {props.mail}</h2>
-            <a target="_blank" rel="noopener noreferrer" href={props.site}> <h4> {props.site} </h4> </a>
+            <a target="_blank" rel="noopener noreferrer" href={props.site}> <h4> {props.message} </h4> </a>
         </div>
     </div>
 }
@@ -103,6 +109,7 @@ function Contact() {
                         mail={contact["Mail"]}
                         site={contact["Site"]}
                         img={contact["Img"]}
+                        message={contact["Message"]}
                     />
                 })}
             </div>
