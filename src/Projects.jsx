@@ -175,7 +175,7 @@ function ProjectCard(props) {
     }
     return <div className="singleProject">
         <h1> {props.title} </h1>
-        <img src={props.src} alt={props.title}></img>
+        <img src={props.src} alt={props.title} loading="lazy"></img>
         <div className="projectLogos">
         <button onClick={displayInfo} className="btn"> {infoLogo}</button>
         {showDescription !== true ? 
@@ -199,7 +199,7 @@ function ProjectCard(props) {
 function CertificateCard(props) {  
     return <div className="singleProject">
         <h1> {props.title} </h1>
-        <img src={props.src} alt={props.title}></img>
+        <img src={props.src} alt={props.title} loading="lazy"></img>
     </div>
 }
 
