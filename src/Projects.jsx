@@ -91,6 +91,13 @@ let projectsBack = [
         "Link":"https://www.youtube.com/watch?v=CZJt4mJEUc8",
     },
     {
+        "Title": "Ecommerce Web Store en Laravel",
+        "Description": "Usando PHP con el framwork Laravel, se ejecuto la solucion para hacer una aplicacion web de ecommerce, cuenta con seccion de productos, carrito y demas. El administrador cuenta con un dashboard donde puede agregar/modificar/eliminar productos ",
+        "Tags": "#PHP #Laravel #MySQL",
+        "Img": webstoreImg,
+        "Link":"https://www.youtube.com/watch?v=kJQp_rHdbmo",
+    },
+    {
         "Title": "Contact Book en Flask",
         "Description": "Usando React como Front End y Flask como Backend, la aplicacion web consiste de un libro personal de contactos, el usuario puede registrarse, iniciar sesion y agregar/borrar contactos a su preferencia. ",
         "Tags": "#Flask #Python #React #Javascript #MongoDB",
@@ -118,13 +125,7 @@ let projectsBack = [
         "Img": financeImg,
         "Link":"https://www.youtube.com/watch?v=X28UbNHOBbA",
     },
-    {
-        "Title": "Ecommerce Web Store en Laravel",
-        "Description": "Usando PHP con el framwork Laravel, se ejecuto la solucion para hacer una aplicacion web de ecommerce, cuenta con seccion de productos, carrito y demas. El administrador cuenta con un dashboard donde puede agregar/modificar/eliminar productos ",
-        "Tags": "#PHP #Laravel #MySQL",
-        "Img": webstoreImg,
-        "Link":"https://www.youtube.com/watch?v=kJQp_rHdbmo",
-    },
+    
     {
         "Title": "2FA Auth simulation en NodeJS",
         "Description": "Proyecto de autenticacion (login,register,etc) 2FA usando nodeJS, consiste en un contador con un numero de 6 digitos que cambia cada cierto tiempo, y a su vez cuenta con una API para validat el token actual.",
