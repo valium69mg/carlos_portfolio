@@ -217,7 +217,12 @@
 }
 
 
-@media (max-width: 595px) {
+@media (max-width: 595px) and (max-width: 340px) {
+    
+    .presentationCard  {
+        height: fit-content;
+    }
+    
     .presentationCard h3  {
         font-size: 12px;
     }
@@ -235,8 +240,28 @@
         font-size: 16px;
     }
     
-   
-    
-    
 }
 
+@media (max-width: 595px) {
+    .presentationCard   {
+        height: fit-content;
+    }
+    
+    .presentationCard h3  {
+        font-size: 12px;
+    }
+
+    .presentationCard h1  {
+        font-size: 14px;
+    }
+    
+    .presentationCard img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .descargarBtn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
