@@ -163,6 +163,11 @@
     border: none;
     background-color: transparent;
     color: blue;
+    transition: all 0.5s ease;
+}
+
+.dropbtn:hover {
+    transform: scale(105%);
 }
 
 
