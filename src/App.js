@@ -13,7 +13,7 @@ import Footer from "./Footer";
 import wordpresslogo from "./images/wordpresslogo.png";
 import nodejslogo from "./images/nodejs-logo.png";
 import linuxlogo from "./images/linuxlogo.png";
-import djangologo from "./images/django-icon.png";
+import springlogo from "./images/spring-png.png";
 import cv from "./cv.pdf";
 import "./styles/home.css";
 import Loader from "./Loader";
@@ -77,9 +77,9 @@ let skillsFramework = [
     "Img":linuxlogo,
   },
   {
-    "Title":"Django",
+    "Title":"Spring",
     "Description": "",
-    "Img":djangologo,
+    "Img":springlogo,
   },
 ]
 
