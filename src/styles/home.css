@@ -162,7 +162,8 @@
     margin: 12px;
     border: none;
     background-color: transparent;
-    color: #6482AD;
+    color: white;
+    text-decoration: underline;
     transition: all 0.5s ease;
 }
 
