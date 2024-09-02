@@ -266,15 +266,10 @@ function Projects() {
     };
     
     // EVERY TIME THE WINDOW SIZE CHANGES WE HAVE TO CHECK IF WE DISPLAY OR HIDE THE MENU
-    useEffect(() => {
-        if ( window.innerWidth < 596) {
-        setMenuVisibility(false);
-
-        } else {
-        setMenuVisibility(true);
-        }
-        // IF WINDOWS WIDTH IS MORE THAN 596PX
-    },window.innerWidth);
+    window.onresize = () => {
+        window.innerWidth < 596 ?  setMenuVisibility(false) :  setMenuVisibility(true); 
+    };
+  
   
 
     return <div className="App">
