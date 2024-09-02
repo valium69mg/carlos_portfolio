@@ -3,7 +3,7 @@ import "./styles/contact.css";
 import phonelogo from "./images/phone.png"
 import gmaillogo from "./images/gmail.png";
 import githublogo from "./images/github.png";
-import linkedinlogo from "./images/linkedinlogo.jpg";
+import linkedinlogo from "./images/linkedinlogo.png";
 import Footer from "./Footer";
 import Loader from "./Loader";
 import { useState,useEffect } from "react";
