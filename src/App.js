@@ -131,7 +131,8 @@ function FrameCard(props) {
 }
 
 function App() {
-  
+  document.title = 'Carlos Portfolio';
+
   const [loading,setLoading] = useState(true);
 
   // INITIAL STATE OF MENU DEPENDING ON THE WINDOWS WIDTH
