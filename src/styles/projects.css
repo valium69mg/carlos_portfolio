@@ -38,7 +38,7 @@
 }
 
 .singleProject h5 {
-    text-align: justify;
+    text-align: left;
     padding: 12px 24px;
 }
 
@@ -74,7 +74,6 @@
     visibility: visible;
     border-radius: 12px;
     background-color: #6482AD;
-    border: 1px solid black;
     color: #E2DAD6;
     width:30%;
 }
