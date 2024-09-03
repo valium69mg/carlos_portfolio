@@ -165,11 +165,12 @@
     color: white;
     transition: all 0.5s ease;
     font-size: 2rem;
-    animation: bounce .8s infinite alternate;
+    border-bottom: 1px solid white;
 }
 
-.dropbtn:hover {
-    transform: scale(105%);
+.arrowLogo {
+    animation: bounce 1s infinite alternate;
+
 }
 
 .hidden {
@@ -178,7 +179,7 @@
 
 /* BOUNCE ANIMATION */
 @keyframes bounce {
-    to { transform: scale(1.1); }
+    to { transform: scale(1.2); }
   }
 
   /* TO TOP OF PAGE BUTTON */
