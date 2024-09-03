@@ -146,20 +146,6 @@ let certifications = [
 function Projects() {
     
     const [loading,setLoading] = useState(true);
-   
-    // SCROLL TO TOP BUTTON
-    const [showScrollToTop, setShowScrollToTop] = useState(false);
-
-
-    const handleScroll = () => {
-        const windowHeight = window.innerHeight;
-        const fullHeight = document.documentElement.scrollHeight;
-        const currentPosition = window.scrollY;
-    
-        const scrollPercentage = (currentPosition / (fullHeight - windowHeight)) * 100;
-        scrollPercentage > 25 ? setShowScrollToTop(true) : setShowScrollToTop(false);
-    };
-
 
     // USE EFFECT AT THE BEGGINING OF PAGE LOAD TO SIMULATE LOADING TIME
     useEffect(() => {
@@ -168,18 +154,14 @@ function Projects() {
         }, 1000)
     });
 
-    setInterval(() => {
-        handleScroll();
-      },1000);
-    
 
     return <div className="App">
         <NavbarWithVisibility/> 
+        <ScrollToTop
+        key={"appsticky"} />
         {loading !== true ? 
         <>  
-            <ScrollToTop 
-                show={showScrollToTop}
-            />
+    
             <div className="projectsContainer">
                 <ProjectCategory 
                     key="Fullstack"
@@ -205,9 +187,6 @@ function Projects() {
                     />
             </div>
             <Footer/>
-            <ScrollToTop
-            show={showScrollToTop}
-            />
         </>
         :
         <Loader/>
