@@ -114,7 +114,7 @@ function App() {
   
   // SCROLL TO TOP BUTTON
 
-  const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   const handleScroll = () => {
       const windowHeight = window.innerHeight;
@@ -122,27 +122,26 @@ function App() {
       const currentPosition = window.scrollY;
   
       const scrollPercentage = (currentPosition / (fullHeight - windowHeight)) * 100;
-      setScrollPercentage(scrollPercentage);
+      scrollPercentage > 25 ? setShowScrollToTop(true) : setShowScrollToTop(false);
   };
 
   // USE EFFECT AT THE BEGGINING OF PAGE LOAD TO SIMULATE LOADING TIME
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-      handleScroll();
     }, 1000)
   });
 
-  
+  setInterval(() => {
+    handleScroll();
+  }, 1000);
 
   return (
     <div className="App">
       <NavbarWithVisibility />  
       {loading !== true ? 
       <>
-        <ScrollToTop 
-          scrollPercentage={scrollPercentage}
-        />
+        
         <div className="presentationCard">    
           <h1> Acerca de Mi {gearLogo}</h1> 
             <div className="imgWrapper">
@@ -178,10 +177,13 @@ function App() {
           })}
         </div>
         </div>
-        
+        <ScrollToTop
+          show={showScrollToTop}
+        />
         <Footer/>
         
       </>
+      
       :
       <Loader/>
       }

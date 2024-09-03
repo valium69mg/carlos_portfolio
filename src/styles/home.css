@@ -172,6 +172,10 @@
     transform: scale(105%);
 }
 
+.hidden {
+    display: none;
+}
+
 /* BOUNCE ANIMATION */
 @keyframes bounce {
     to { transform: scale(1.1); }

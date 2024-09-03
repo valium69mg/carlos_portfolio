@@ -9,17 +9,26 @@ function ScrollToTop(props) {
     window.scrollTo(0, 0);
   }
 
-  if (props.scrollPercentage > 30) {
-    return (<div className="topOfPageContainer">
-        <button className="topOfPageButton" onClick={scrollToTop}>
-          Ir a inicio de pagina {upwardsArrowLogo}
-        </button>
-  </div>)
+  return (
+    <>
+      {
+        props.show === true ? 
+        <div className="topOfPageContainer">
+          <button className="topOfPageButton" onClick={scrollToTop}>
+            Ir a inicio de pagina {upwardsArrowLogo}
+          </button>
+        </div> 
+      : 
+        <div className="topOfPageContainer hidden">
+          <button className="topOfPageButton" onClick={scrollToTop}>
+            Ir a inicio de pagina {upwardsArrowLogo}
+          </button>
+        </div>
+      }
+      </>
+    )
   }
 
-  else {
-    return <></>
-  }
-}
+
 
 export {ScrollToTop}
