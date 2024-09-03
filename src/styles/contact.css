@@ -25,6 +25,10 @@
     
 }
 
+.contactCard a {
+    color: black;
+}
+
 .contactCard h2 {
     font-size: 1rem;
     color: #6482AD;
@@ -49,6 +53,10 @@
 .infoCard {
     display: flex;
     flex-direction: column;
+}
+
+#contactTitle {
+    color: white;
 }
 
 /* MEDIA QUERIES */

@@ -65,8 +65,9 @@ function Contact() {
         <NavbarWithVisibility/>   
         {loading !== true ? 
         <>  
+            <h1 id="contactTitle"> Contacto {contactLogo}</h1>
             <div className="contactContainer">
-                <h1> Contacto {contactLogo}</h1>
+                
                 {contacts.map((contact) => {
                     return <ContactCard 
                         key={contact["Mail"]}
