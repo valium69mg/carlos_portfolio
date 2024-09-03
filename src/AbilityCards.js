@@ -21,6 +21,7 @@ function SkillCard(props) {
             <div className="imgWrapper">
             {props.img !== "" ?  <img src={props.img} alt="skill" loading="lazy"></img> : <img src={GenericAvatar} alt="skill" loading="lazy"></img>}
             </div>
+            <p> {props.description}</p>
         </div>
   }
   
