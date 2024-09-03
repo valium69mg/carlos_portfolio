@@ -1,6 +1,5 @@
 import React from "react";
 import {NavbarWithVisibility} from "./NavbarWithVisibility.js";
-import GenericAvatar from "./images/generic-avatar.jpg";
 import CarlosPic from './images/carlos.png';
 import jslogo from "./images/js-logo.png";
 import phplogo from "./images/php-logo.png";
@@ -18,6 +17,7 @@ import cv from "./cv_carlostranquilinocarlos.pdf";
 import "./styles/home.css";
 import Loader from "./Loader";
 import { useState,useEffect } from "react";
+import { SkillCard,FrameCard } from "./AbilityCards.js";
 
 let skills = [
   {
@@ -102,25 +102,6 @@ let windowLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" 
 <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1M2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1z"/>
 </svg>;
 //{props.description !== "" ? <p> {props.description.substring(0,100)+'...'}</p> : <p> </p>}
-
-function SkillCard(props) {
-  return <div className="skillCard">
-          <h1>{props.title} </h1>
-          <div className="imgWrapper">
-          {props.img !== "" ?  <img src={props.img} alt="skill" loading="lazy"></img> : <img src={GenericAvatar} alt="skill" loading="lazy"></img>}
-          </div>
-      </div>
-}
-
-
-function FrameCard(props) {
-  return <div className="skillCard frameCard">
-          <h1>{props.title} </h1>
-          <div className="imgWrapper">
-          {props.img !== "" ?  <img src={props.img} alt="skill" loading="lazy"></img> :<img src={GenericAvatar} alt="skill" loading="lazy"></img>}
-          </div>
-  </div>
-}
 
 function App() {
 
