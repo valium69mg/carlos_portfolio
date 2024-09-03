@@ -20,7 +20,7 @@ import dataCourseImg from "./images/courses/data-course.png";
 import Loader from "./Loader";
 import { useState,useEffect } from "react";
 import { NavbarWithVisibility } from "./NavbarWithVisibility";
-import { ProjectCard,CertificateCard } from "./AbilityCards";
+import { ProjectCategory,CertificateCategory } from "./Categories";
 
 let frontLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-laptop" viewBox="0 0 16 16">
 <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
@@ -140,40 +140,6 @@ let certifications = [
         "Img": dataCourseImg,
     }
 ]
-
-
-function ProjectCategory(props) {    
-    return <div className="singleProjectContainer">
-        <h1 id="categoryTitle"> {props.category} {props.logo} </h1>
-        <div className="singleProjectsCards">
-        {props.projects.map((project) => {
-        return <ProjectCard
-                key={project["Title"]}
-                title={project["Title"]}
-                description={project["Description"]}
-                src={project["Img"]}
-                tags={project["Tags"]}
-                link={project["Link"]}
-            />
-        })}      
-        </div>
-    </div>
-}
-
-function CertificateCategory(props) {    
-    return <div className="singleProjectContainer">
-        <h1 id="categoryTitle"> {props.category} {props.logo} </h1>
-        <div className="singleProjectsCards">
-        {props.projects.map((project) => {
-        return <CertificateCard
-                key={project["Title"]}
-                title={project["Title"]}
-                src={project["Img"]}
-            />
-        })}      
-        </div>
-    </div>
-}
 
 function Projects() {
     
