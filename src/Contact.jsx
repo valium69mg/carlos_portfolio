@@ -53,17 +53,18 @@ function ContactCard(props) {
 
 function Contact() {
     const [loading,setLoading] = useState(true);
-   
+
+    // USE EFFECT AT THE BEGGINING OF PAGE LOAD TO SIMULATE LOADING TIME
     useEffect(() => {
         setTimeout(() => {
         setLoading(false);
-        },1000)
+        }, 1000)
     });
 
     return <div className="App">
         <NavbarWithVisibility/>   
         {loading !== true ? 
-        <>
+        <>  
             <div className="contactContainer">
                 <h1> Contacto {contactLogo}</h1>
                 {contacts.map((contact) => {

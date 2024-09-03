@@ -21,6 +21,8 @@ import Loader from "./Loader";
 import { useState,useEffect } from "react";
 import { NavbarWithVisibility } from "./NavbarWithVisibility";
 import { ProjectCategory,CertificateCategory } from "./Categories";
+import {ScrollToTop} from "./ScrollToTop.jsx";
+
 
 let frontLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-laptop" viewBox="0 0 16 16">
 <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
@@ -145,18 +147,36 @@ function Projects() {
     
     const [loading,setLoading] = useState(true);
    
+    // SCROLL TO TOP BUTTON
+
+    const [scrollPercentage, setScrollPercentage] = useState(0);
+    
+
+    const handleScroll = () => {
+        const windowHeight = window.innerHeight;
+        const fullHeight = document.documentElement.scrollHeight;
+        const currentPosition = window.scrollY;
+    
+        const scrollPercentage = (currentPosition / (fullHeight - windowHeight)) * 100;
+        setScrollPercentage(scrollPercentage);
+    };
+
+
+    // USE EFFECT AT THE BEGGINING OF PAGE LOAD TO SIMULATE LOADING TIME
     useEffect(() => {
         setTimeout(() => {
+        handleScroll();
         setLoading(false);
-        },1500)
+        }, 1000)
     });
-  
 
     return <div className="App">
         <NavbarWithVisibility/> 
         {loading !== true ? 
         <>  
-            
+            <ScrollToTop 
+                scrollPercentage={scrollPercentage}
+            />
             <div className="projectsContainer">
                 <ProjectCategory 
                     key="Fullstack"

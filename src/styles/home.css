@@ -162,7 +162,7 @@
     margin: 12px;
     border: none;
     background-color: transparent;
-    color: white;
+    color: #E2DAD6;
     transition: all 0.5s ease;
     font-size: 2rem;
     animation: bounce .8s infinite alternate;
@@ -177,7 +177,24 @@
     to { transform: scale(1.1); }
   }
 
-/* MEDIA QUERIES */
+  /* TO TOP OF PAGE BUTTON */
+
+.topOfPageButton {
+    padding:12px 24px;
+    border-radius: 12px;
+    border: 1px solid #6482AD;
+    width: 220px;
+    margin: 12px;
+    color: #6482AD;
+}
+
+.topOfPageContainer {
+    position: sticky;
+    top: 90%;
+    width: 100%;    
+}
+
+  /* MEDIA QUERIES */
 
 @media (min-width: 1279px) and (max-width: 1792px) {
     .presentationCard {
