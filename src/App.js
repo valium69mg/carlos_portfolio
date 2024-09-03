@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import {NavbarWithVisibility} from "./NavbarWithVisibility.js";
 import GenericAvatar from "./images/generic-avatar.jpg";
 import CarlosPic from './images/carlos.png';
 import jslogo from "./images/js-logo.png";
@@ -83,14 +83,6 @@ let skillsFramework = [
   },
 ]
 
-let upwardsArrowLogo = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-arrow-up" viewBox="0 0 16 16">
-<path fillRule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
-</svg>
-
-let downwardsArrowLogo = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-arrow-down-short" viewBox="0 0 16 16">
-<path fillRule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
-</svg>
-
 let downloadLogo = <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-box-arrow-down" viewBox="0 0 16 16">
 <path fillRule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1z"/>
 <path fillRule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z"/>
@@ -131,27 +123,10 @@ function FrameCard(props) {
 }
 
 function App() {
+
   document.title = 'Carlos Portfolio';
 
   const [loading,setLoading] = useState(true);
-
-  // INITIAL STATE OF MENU DEPENDING ON THE WINDOWS WIDTH
-  const [menuVisibility, setMenuVisibility] = useState(() => {
-    // IF WINDOWS WIDTH IS LESS THAN 596PX
-    if ( window.innerWidth < 596) {
-      return false;
-    } 
-    // IF WINDOWS WIDTH IS MORE THAN 596PX
-    return true;
-  });
-
-  // TOGGLE BETWEEN HIDE MENU AND DISPLAY MENU
-  const toggleMenu = () => {
-    if (menuVisibility === true) {
-      setMenuVisibility(false);
-    }
-    else {setMenuVisibility(true);}
-  };
 
   // USE EFFECT AT THE BEGGINING OF PAGE LOAD TO SIMULATE LOADING TIME
   useEffect(() => {
@@ -160,17 +135,10 @@ function App() {
     }, 1000)
   });
 
-  window.onresize = () => {
-    window.innerWidth < 596 ?  setMenuVisibility(false) :  setMenuVisibility(true); 
-  };
-  
 
   return (
     <div className="App">
-      <>
-      <button className="dropbtn" onClick={toggleMenu}> Menu {menuVisibility === false ? downwardsArrowLogo : upwardsArrowLogo} </button>
-      <Navbar visibility={menuVisibility}/>
-      </>    
+      <NavbarWithVisibility />  
       {loading !== true ? 
       <>
         <div className="presentationCard">    
