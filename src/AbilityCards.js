@@ -1,5 +1,6 @@
 import GenericAvatar from "./images/generic-avatar.jpg";
 import { useState } from "react";
+import "./styles/home.css";
 
 
 let youtubeLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6482AD" className="bi bi-youtube" viewBox="0 0 16 16">

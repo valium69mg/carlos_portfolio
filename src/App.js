@@ -39,7 +39,7 @@ let skills = [
   }
   ,
   {
-    "Title":"Bases de Datos",
+    "Title":"BDs",
     "Description": "bases de datos SQL y noSQL.",
     "Img":databaselogo,
   },

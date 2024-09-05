@@ -16,13 +16,13 @@
 .presentationCard h1 {
     font-size: 24px;
     text-align: center;
-    color: #6482AD;
+    color: #16325B;
     width: 80%;
 
 }
 
 .presentationCard h3 {
-    font-size: 18px;
+    font-size: 24px;
     color: black;
     width: 80%;
     text-align: center;
@@ -36,7 +36,8 @@
     border-radius: 50%;
     margin:3px;
     overflow: hidden;
-    background-color: transparent;
+    background-color: white;
+    border: none;
 }
 
 .presentationCard img {
@@ -60,11 +61,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-basis: 25%;
     gap: 12px;
     background-color: #E2DAD6;
     border-radius: 12px;
-    min-height: 300px;
+    min-height: 200px;
 }
 
 .skillCard h1 {
@@ -74,7 +76,7 @@
     color: #6482AD;
     margin: 0;
     font-size: 22px;
-    height: 50px;
+    height: fit-content;
 }
 
 .skillCard p {
@@ -87,12 +89,11 @@
 }
 
 .skillCard img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     padding: 12px;
     align-self: center;
     justify-self: center;
-
 }
 
 
@@ -143,7 +144,7 @@
 .frameCard {
     border:none;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     padding: 12px 24px;
     min-height: 150px;
 }
@@ -155,8 +156,8 @@
 
 
 .frameCard img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
 }
 
 /* Menu drop down */
@@ -226,7 +227,7 @@
 
 @media (min-width: 640px) and (max-width: 823px) {
     .presentationCard h3  {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .presentationCard h1  {
@@ -245,7 +246,7 @@
 
 @media (min-width: 596px) and (max-width: 639px) {
     .presentationCard h3  {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .presentationCard h1  {
@@ -265,6 +266,22 @@
 @media (max-width: 595px)  {
     .dropbtn {
         display: inline-block;
+    }
+
+    .skillCard, .frameCard {
+        margin: 0.5rem;
+    }
+
+    .skillCard img {
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .frameCard img {
+        width: 100px;
+        height: 100px;
+        
     }
 
 
@@ -289,7 +306,7 @@
         margin-bottom: 2rem;
     }
     .presentationCard h3  {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .presentationCard h1  {
