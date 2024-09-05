@@ -4,4 +4,10 @@
     align-items: center;
     gap: 6px;
     margin-top: 12px;
+    color:white;
+
+}
+
+.footer a {
+    color: black;
 }
