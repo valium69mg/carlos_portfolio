@@ -23,29 +23,29 @@ import {ScrollToTop} from "./ScrollToTop.jsx";
 let skills = [
   {
     "Title":"Javascript",
-    "Description": "Javascript con HTML y CSS, con jQuery, React, NodeJS.",
+    "Description": "Javascript para front end y back end.",
     "Img":jslogo,
   },
   {
     "Title":"PHP",
-    "Description": "PHP junto con frameworks como Laravel y Wordpress.",
+    "Description": "PHP junto con Laravel y Wordpress.",
     "Img":phplogo,
   }
   ,
   {
     "Title":"Python",
-    "Description": "Python, junto con frameworks como Flask y analisis de datos.",
+    "Description": "Python para analisis de datos.",
     "Img":pythonlogo,
   }
   ,
   {
     "Title":"Bases de Datos",
-    "Description": "bases de datos SQL y no SQL con: mongoDB, postgreSQL, MySQL, SQLite.",
+    "Description": "bases de datos SQL y noSQL.",
     "Img":databaselogo,
   },
   {
     "Title":"Java",
-    "Description": "Experiencia usando java con spring y spring boot para tecnologias backend.",
+    "Description": "Java para desarrollo web con spring boot",
     "Img":javaLogo,
   }
   

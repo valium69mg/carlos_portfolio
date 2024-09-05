@@ -34,8 +34,9 @@
 
 .imgWrapper {
     border-radius: 50%;
-    border: 3px solid #6482AD;
+    margin:3px;
     overflow: hidden;
+    background-color: transparent;
 }
 
 .presentationCard img {
@@ -52,7 +53,7 @@
     gap: 24px;
     padding: 24px 24px;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
 }
 
 .skillCard {
@@ -63,7 +64,7 @@
     gap: 12px;
     background-color: #E2DAD6;
     border-radius: 12px;
-
+    min-height: 300px;
 }
 
 .skillCard h1 {
@@ -72,7 +73,8 @@
     text-align: center;
     color: #6482AD;
     margin: 0;
-    font-size: 24px;
+    font-size: 22px;
+    height: 50px;
 }
 
 .skillCard p {
@@ -81,7 +83,7 @@
     font-size: 18px;
     font-weight: normal;
     padding: 0px 24px;
-    color: black;
+    color: #16325B;
 }
 
 .skillCard img {
@@ -99,6 +101,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
@@ -142,7 +145,7 @@
     align-items: center;
     justify-content: start;
     padding: 12px 24px;
-
+    min-height: 150px;
 }
 
 .frameCard h1 {
@@ -263,44 +266,34 @@
     .dropbtn {
         display: inline-block;
     }
+
+
 }
 
-@media (max-width: 595px) and (max-width: 340px) {
-    
-    .presentationCard  {
-        height: fit-content;
-    }
-    
-    .presentationCard h3  {
-        font-size: 14px;
-    }
-
-    .presentationCard h1  {
-        font-size: 18px;
-    }
-    
-    .presentationCard img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .descargarBtn {
-        font-size: 16px;
-    }
-    
-}
 
 @media (max-width: 595px) {
+    .frameCard {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .skillsCardContainer {
+        padding: 0;
+        
+    }
     .presentationCard   {
         height: fit-content;
     }
-    
+    .skillsSection 
+    {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
     .presentationCard h3  {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .presentationCard h1  {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .presentationCard img {
@@ -311,5 +304,15 @@
     .descargarBtn {
         font-size: 14px;
         padding: 6px 12px;
+    }
+
+    .skillCard > p {
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .skillCard {
+        width: fit-content;
     }
 }
