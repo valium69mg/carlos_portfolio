@@ -23,7 +23,7 @@ import { ProjectCategory } from "./Categories.js";
 import webstoreImg from "./images/projects/webstore.png";
 import jwtImg from "./images/projects/jwt.png";
 import laravelCloudImg from "./images/projects/laravelcloud.jpg";
-import universityImage from "./images/tec-de-monterrey-seeklogo.png";
+import universityImage from "./images/Tecnol3Fgico_de_Monterrey_old.png";
 import "./styles/projects.css";
 
 
@@ -124,8 +124,9 @@ let downloadLogo = <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28
 <path fillRule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z"/>
 </svg>;
 
-let gearLogo = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+let gearLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-person-exclamation" viewBox="0 0 16 16">
+<path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+<path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1.5a.5.5 0 0 0 1 0V11a.5.5 0 0 0-.5-.5m0 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
 </svg>
 
 let terminalLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-terminal" viewBox="0 0 16 16">
@@ -169,12 +170,18 @@ function App() {
             <div className="imgWrapper">
             <img src={CarlosPic} alt="avatar"></img>
             </div>
+           
+            
+            <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, soy un Ingeniero en Mecatronica y Programador con enfoque en aplicaciones web, usando tecnologias y frameworks modernos. </h3>
+            <div class="universityContainer">
+            <h3> Egresado de </h3>
             <img src={universityImage} id="uniImage" alt="tecdemty">
 
             </img>
+            </div>
             
-            <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, soy un programador con enfoque en aplicaciones web, usando tecnologias y frameworks modernos para front-end y back-end. </h3>
             <a className="descargarBtn" href={cv}  target="_blank" rel="noopener noreferrer"> Descargar c.v.  {downloadLogo} </a>
+          
         </div>
         <div className="projectsContainer">
                 <ProjectCategory 
