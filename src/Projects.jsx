@@ -22,6 +22,7 @@ import { useState,useEffect } from "react";
 import { NavbarWithVisibility } from "./NavbarWithVisibility";
 import { ProjectCategory,CertificateCategory } from "./Categories";
 import {ScrollToTop} from "./ScrollToTop.jsx";
+import laravelCloudImg from "./images/projects/laravelcloud.jpg";
 
 
 let frontLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-laptop" viewBox="0 0 16 16">
@@ -91,6 +92,13 @@ let projectsBack = [
         "Tags": "#Javascript #React #NodeJS #PostgreSQL",
         "Img": blogImg,
         "Link":"https://www.youtube.com/watch?v=wJyW7PtdhuI&t=2s",
+    },
+    {
+        "Title": "Nube Multimedia en Laravel",
+        "Description": "Proyecto de una web app que guarda multiples recursos multimedia que el usuario quiera respaldar en un servidor, permite crear carpetas y modificar nombres de los recursos, ya sea videos, imagenes o audio.",
+        "Tags": "#Laravel #PHP #MySql",
+        "Img": laravelCloudImg,
+        "Link":"https://www.youtube.com/watch?v=mFTw0mVRy8k",
     },
     {
         "Title": "Student Management System en PHP",

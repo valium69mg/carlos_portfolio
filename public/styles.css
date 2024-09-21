@@ -17,6 +17,7 @@ body {
     background-color: #295F98;
     min-height: 100vh;
     min-width: 360px;
+    row-gap: 1rem;
 }
 
 .App h1 {

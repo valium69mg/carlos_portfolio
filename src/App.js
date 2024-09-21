@@ -19,7 +19,41 @@ import Loader from "./Loader";
 import { useState,useEffect } from "react";
 import { SkillCard,FrameCard } from "./AbilityCards.js";
 import {ScrollToTop} from "./ScrollToTop.jsx";
+import { ProjectCategory } from "./Categories.js";
+import webstoreImg from "./images/projects/webstore.png";
+import jwtImg from "./images/projects/jwt.png";
+import laravelCloudImg from "./images/projects/laravelcloud.jpg";
+import "./styles/projects.css";
 
+
+let backLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-pc-display" viewBox="0 0 16 16">
+<path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+</svg>
+
+let highlightProjects = [
+  {
+    "Title": "Ecommerce Web Store en Laravel",
+    "Description": "Usando PHP con el framwork Laravel, se ejecuto la solucion para hacer una aplicacion web de ecommerce, cuenta con seccion de productos, carrito y demas. El administrador cuenta con un dashboard donde puede agregar/modificar/eliminar productos ",
+    "Tags": "#PHP #Laravel #MySQL",
+    "Img": webstoreImg,
+    "Link":"https://www.youtube.com/watch?v=kJQp_rHdbmo",
+  },
+  {
+    "Title": "Nube Multimedia en Laravel",
+    "Description": "Proyecto de una web app que guarda multiples recursos multimedia que el usuario quiera respaldar en un servidor, permite crear carpetas y modificar nombres de los recursos, ya sea videos, imagenes o audio.",
+    "Tags": "#Laravel #PHP #MySql",
+    "Img": laravelCloudImg,
+    "Link":"https://www.youtube.com/watch?v=mFTw0mVRy8k",
+},
+  {
+      "Title": "JWT Authentication System en NodeJS",
+      "Description": "Proyecto de autenticacion (login,register,etc) usando NodeJS como backend, utilizando el modelo Model View Controller para la solucion, usando encriptacion de password y otras medidas de seguridad",
+      "Tags": "#Javascript #NodeJS #PostgreSQL",
+      "Img": jwtImg,
+      "Link":"https://www.youtube.com/watch?v=CZJt4mJEUc8",
+  },
+  
+]
 let skills = [
   {
     "Title":"Javascript",
@@ -137,6 +171,14 @@ function App() {
             <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, me dedico al diseño de aplicaciones y paginas web usando frameworks y tecnologias modernas. </h3>
             <a className="descargarBtn" href={cv}  target="_blank" rel="noopener noreferrer"> Descargar CV  {downloadLogo} </a>
         </div>
+        <div className="projectsContainer">
+                <ProjectCategory 
+                    key="Destacado"
+                    category="Ultimos proyectos" 
+                    projects={highlightProjects}
+                    logo={backLogo}
+                    />
+            </div>
         <div className="skillsSection">
         <h1> Tecnologias {terminalLogo} </h1>
         <div className="skillsCardContainer">
