@@ -139,7 +139,10 @@ let windowLogo = <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" 
 <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1M2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1z"/>
 </svg>;
 
-
+let graduationLogo = <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+<path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+<path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+</svg>
 
 function App() {
 
@@ -175,7 +178,7 @@ function App() {
             
             <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, soy un Ingeniero en Mecatronica y programador fullstack de web apps. </h3>
             <div class="universityContainer">
-            <h3> Egresado de </h3>
+            <h3> Universidad {graduationLogo} </h3>
             <img src={universityImage} id="uniImage" alt="tecdemty">
 
             </img>

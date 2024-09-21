@@ -61,11 +61,14 @@
     flex-direction: column;
     row-gap: 6px;
     align-items: center;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .universityContainer h3 {
     color: #16325B;
+    font-family:'Courier New', Courier, monospace;
+    
+    width: 100%;
 }
 
 /* SKILLS */
@@ -217,7 +220,7 @@
     border: 1px solid #6482AD;
     width: 220px;
     margin: 12px;
-    color: #6482AD;
+    color: #16325B;
 }
 
 .topOfPageContainer {
