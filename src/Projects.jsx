@@ -173,7 +173,7 @@ function Projects() {
             <div className="projectsContainer">
                 <ProjectCategory 
                     key="Fullstack"
-                    category="Fullstack Projects" 
+                    category="Fullstack" 
                     projects={projectsBack}
                     logo={backLogo}
                     />
@@ -181,15 +181,15 @@ function Projects() {
             <div className="projectsContainer">
                 <CertificateCategory
                     key="Udemy"
-                    category="Certificados (Udemy)" 
+                    category="Certificados" 
                     projects={certifications}
                     logo={certificateLogo}
                     />
             </div>
             <div className="projectsContainer">
                 <ProjectCategory 
-                    key="Front End"
-                    category="Front End Projects" 
+                    key="Front-end"
+                    category="Front end" 
                     projects={projects}
                     logo={frontLogo}
                     />
