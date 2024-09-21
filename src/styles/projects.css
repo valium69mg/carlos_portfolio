@@ -57,6 +57,10 @@
     padding: 12px 24px;
 }
 
+h1 {
+    font-family:'Courier New', Courier, monospace;
+
+}
 
 .singleProject img {
     width: 244px;

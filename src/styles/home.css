@@ -13,6 +13,10 @@
     height: fit-content;
 }
 
+h1 {
+    font-family:'Courier New', Courier, monospace;
+
+}
 .presentationCard h1 {
     font-size: 24px;
     text-align: center;
@@ -143,8 +147,6 @@
 
 .skillsSection > h1 {
     padding: 12px 24px;
-    font-family:'Courier New', Courier, monospace;
-
 }
 
 /*DESCARGAR CV*/

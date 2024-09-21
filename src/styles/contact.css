@@ -11,7 +11,10 @@
     border-radius: 12px;
     background-color: #E2DAD6;
 }
+h1 {
+    font-family:'Courier New', Courier, monospace;
 
+}
 .contactContainer h1 {
     align-self: center;
 }
