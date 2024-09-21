@@ -195,8 +195,9 @@ function App() {
                     logo={backLogo}
                     />
             </div>
+        <h1 className="title"> Tecnologias {terminalLogo} </h1>
         <div className="skillsSection">
-        <h1> Tecnologias {terminalLogo} </h1>
+        
         <div className="skillsCardContainer">
           {skills.map((skill) => {
             return <SkillCard 
@@ -208,8 +209,9 @@ function App() {
           })}
         </div>
         </div>
+        <h1 className="title"> Frameworks {windowLogo} </h1>
         <div className="skillsSection">
-        <h1> Frameworks {windowLogo} </h1>
+        
         <div className="skillsCardContainer">
           {skillsFramework.map((skill) => {
             return <FrameCard 

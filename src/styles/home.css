@@ -131,7 +131,10 @@ h1 {
     justify-self: center;
 }
 
-
+/*titles*/
+.title{
+    color: white;
+}
 
 .skillsSection {
     display: flex;
@@ -144,6 +147,7 @@ h1 {
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.74);
     background-color: #E2DAD6;
     margin: 24px;
+    padding: 12px 24px;
 }
 
 .skillsSection > h1 {
