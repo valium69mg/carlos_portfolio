@@ -18,6 +18,7 @@
 .singleProjectContainer h1 {
     color: #6482AD;
     font-size: 24px;
+    
 }
 
 .singleProjectsCards {
@@ -27,6 +28,11 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
+}
+
+.singleProjectsCards h1 {
+    font-family: "Nunito Sans", sans-serif;
+
 }
 
 .singleProject {
@@ -64,7 +70,6 @@
 
 #categoryTitle {
     font-size: 32px;
-    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.74);
     color: #E2DAD6;
     border-radius: 12px;
     padding: 12px 24px;
