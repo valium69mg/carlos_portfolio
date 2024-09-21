@@ -9,9 +9,6 @@ body {
         "YTLC" 500;
 }
 
-h1 {
-    font-family:'Courier New', Courier, monospace
-}
 
 .App {
     display: flex;

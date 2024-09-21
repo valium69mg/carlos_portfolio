@@ -73,6 +73,10 @@
     color: #E2DAD6;
     border-radius: 12px;
     padding: 12px 24px;
+    font-family:'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* DESCRIPTION POP UP */
