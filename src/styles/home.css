@@ -10,7 +10,7 @@
     border-radius: 12px;
     background-color: #E2DAD6;
     width: 70%;
-    height: 70vh;
+    height: fit-content;
 }
 
 .presentationCard h1 {
@@ -43,6 +43,8 @@
 .presentationCard img {
     width: 280px;
     height: 280px;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 /* SKILLS */
@@ -237,6 +239,7 @@
     .presentationCard img {
         width: 200px;
         height: 200px;
+        
     }
 
     .descargarBtn {
