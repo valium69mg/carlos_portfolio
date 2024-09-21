@@ -190,7 +190,7 @@ function App() {
         <div className="projectsContainer">
                 <ProjectCategory 
                     key="Destacado"
-                    category="Ultimos proyectos" 
+                    category="Proyectos recientes" 
                     projects={highlightProjects}
                     logo={backLogo}
                     />
