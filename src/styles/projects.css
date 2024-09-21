@@ -59,7 +59,7 @@
 
 h1 {
     font-family:'Courier New', Courier, monospace;
-
+    font-weight: 600;
 }
 
 .singleProject img {
@@ -79,6 +79,7 @@ h1 {
     font-family:'Courier New', Courier, monospace;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
 
 }
 

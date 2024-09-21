@@ -178,7 +178,7 @@ function App() {
             
             <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, soy un Ingeniero en Mecatronica y programador fullstack de web apps. </h3>
             <div class="universityContainer">
-            <h3> Universidad {graduationLogo} </h3>
+            <h3> Educacion {graduationLogo} </h3>
             <img src={universityImage} id="uniImage" alt="tecdemty">
 
             </img>
