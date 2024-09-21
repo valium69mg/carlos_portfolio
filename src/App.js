@@ -165,14 +165,15 @@ function App() {
       <>
         
         <div className="presentationCard">    
-          <h1> Mi info {gearLogo}</h1> 
           
             <div className="imgWrapper">
+            
             <img src={CarlosPic} alt="avatar"></img>
             </div>
-           
+            <h1> Mi info {gearLogo}</h1> 
+
             
-            <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, soy un Ingeniero en Mecatronica y Programador con enfoque en aplicaciones web, usando tecnologias y frameworks modernos. </h3>
+            <h3> Soy <span>Carlos Tranquilino Carlos Roman</span>, soy un Ingeniero en Mecatronica y programador fullstack de web apps. </h3>
             <div class="universityContainer">
             <h3> Egresado de </h3>
             <img src={universityImage} id="uniImage" alt="tecdemty">
