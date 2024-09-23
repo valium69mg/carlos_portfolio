@@ -16,6 +16,7 @@ import pythonCourseImg from "./images/courses/python-course.png";
 import phpCourseImg from "./images/courses/php-course.png";
 import javaCourseImg from "./images/courses/java-course.png";
 import dataCourseImg from "./images/courses/data-course.png";
+import todoListJavaImg from "./images/todolistjava.png";
 // USE STATE
 import Loader from "./Loader";
 import { useState,useEffect } from "react";
@@ -78,6 +79,13 @@ let projectsBack = [
         "Tags": "#PHP #Laravel #MySQL",
         "Img": webstoreImg,
         "Link":"https://www.youtube.com/watch?v=kJQp_rHdbmo",
+    },
+    {
+        "Title": "Todo List con Spring Boot",
+        "Description": "Con Bootstrap para front end y spring boot se llego a la solucion para implementar una Todo List App, con login de usuarios, y todas las operaiciones CRUD para creacion de tareas. ",
+        "Tags": "#Java #SpringBoot #Bootstrap",
+        "Img": todoListJavaImg,
+        "Link":"https://www.youtube.com/watch?v=iFenLo0vXjU",
     },
     {
         "Title": "Contact Book en Flask",
